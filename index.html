@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="src/styles/snackbar.css">
+</head>
+
+<body>
+    <div class="input-box">
+        <input type="text" value="" name="binary" size="8" onpaste="return false;" maxlength="8" id="binary"
+            onkeypress="return onlyNumber(event)">
+        <button onclick="convert()">Converter</button>
+    </div>
+    <div class="output-box">
+        <h2>Resultados</h2>
+        <ul class="results" id="results">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_3AlZr9.json" background="transparent"
+                speed="1" style="width: 300px; height: 300px; margin-top: 50px; opacity: 0.8;" loop autoplay>
+            </lottie-player>
+        </ul>
+    </div>
+
+    <input type="text" style="opacity: 0; cursor: default; position: absolute; bottom: 0;" name="hiddenInput"
+        id="hiddenInput">
+
+    <div id="snackbar">Copiado!</div>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="./src/scripts/validaNumero.js">
+
+</script>
+
+
+</html>
