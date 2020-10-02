@@ -2,7 +2,7 @@
 
 💻 Este é o primeiro desafio da comunidade de Devs da Faculdade Sapiens.
 
-#️⃣ Ele consiste em converter dígitos binários em sequência (0, 1) dados pelo usuário, em decimal.
+#️⃣ Consiste em converter dígitos binários em sequência (0, 1) dados pelo usuário, em decimal.
 
 ==================================================================================
 
