@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-body{
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -11,40 +11,40 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: baseline;
+    justify-content: center;
     padding-top: 8%;
     font-family: 'Roboto', sans-serif;
 }
 
-.input-box{
+.input-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 10vh;
     width: 40vw;
-    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.21);
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.21);
     border-radius: 10px;
     padding: 10px;
     background: #fff;
 }
 
-.output-box{
+.output-box {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: baseline;
+    justify-content: center;
     height: 60vh;
     width: 40vw;
-    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.21);
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.21);
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
     background: #fff;
 }
 
-.input-box input{
+.input-box input {
     width: 80%;
     height: 40px;
     border: none;
@@ -57,15 +57,15 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.input-box input:focus{
+.input-box input:focus {
     outline: none;
 }
 
-.input-box button:focus{
+.input-box button:focus {
     outline: none;
 }
 
-.input-box button{
+.input-box button {
     height: 40%;
     border-radius: 5px;
     background-color: #e7005c;
@@ -75,7 +75,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-ul.results{
+ul.results {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,27 +83,57 @@ ul.results{
     width: 60%;
 }
 
-ul.results li{
+ul.results li {
     list-style-type: none;
     text-align: center;
     justify-content: center;
     height: 100%;
     width: 100%;
-    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.21);
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.21);
     border-radius: 10px;
     margin: 0 0 10px 0;
     cursor: pointer;
 }
 
-ul.results li h4{
+ul.results li h4 {
     letter-spacing: 2px;
     font-weight: 600;
     color: #e7005c;
 }
-ul.results li p{
+
+ul.results li p {
     letter-spacing: 2px;
     font-weight: 600;
     font-size: 1.5rem;
     color: #e7005c;
     text-transform: uppercase;
+}
+
+lottie-player {
+    width: 300px;
+    height: 300px;
+}
+
+
+@media (max-width: 900px){
+
+
+.input-box{
+    width: 80vw;
+    height: 15vh;
+}
+.output-box{
+    width:80vw;
+    height: 70vh;
+}
+
+ul.results{
+   width: 85%
+}
+
+lottie-player{
+    height: 150px;
+    width:150px
+}
+
 }
